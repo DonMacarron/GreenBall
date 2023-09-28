@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vboxazul" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="844.0" prefWidth="390.0" styleClass="vboxazul" stylesheets="@../estilos/EstiloPrincipal.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.EditarCuentaController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="botonSiguiente" mnemonicParsing="false" onMouseClicked="#cambiarContraseña" prefHeight="50.0" prefWidth="300.0" styleClass="botonBlanco" text="Cambiar contraseña">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="botonSiguiente1" mnemonicParsing="false" onMouseClicked="#cambiarDatosPersonales" prefHeight="50.0" prefWidth="300.0" styleClass="botonBlanco" text="Cambiar datos personales">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="botonSiguiente2" mnemonicParsing="false" onMouseClicked="#CambiarTarjeta" prefHeight="50.0" prefWidth="300.0" styleClass="botonBlanco" text="Cambiar tarjeta de crédito">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+</VBox>

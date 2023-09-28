@@ -1,0 +1,17 @@
+#bookingEditFrame {
+    -fx-background-color: -fx-accent;
+}
+
+#paidBooking {
+    -fx-font-style: italic;
+}
+
+.label-title {
+    -fx-font-weight: bold;
+}
+
+.separator .line{
+    -fx-background-color: -fx-secondary;
+    -fx-pref-height: 1;
+    -fx-border-color: null;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="slot" minHeight="-Infinity" minWidth="200.0" prefWidth="300.0" spacing="5.0" styleClass="time-slot-frame" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.components.TimeSlotComponentController">
+   <children>
+      <VBox fx:id="infoSection" minWidth="0.0" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox fx:id="userInfo" maxHeight="0.0" minHeight="0.0" visible="false">
+               <children>
+                  <Label styleClass="slot-title" text="Reservado por:" />
+                  <Label fx:id="user" styleClass="slot-main-data" text="Usuario" />
+               </children>
+            </VBox>
+            <HBox fx:id="bookingInfo" minHeight="0.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox>
+                     <children>
+                        <VBox VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="date" styleClass="slot-title" text="27 mayo 2023" />
+                              <Label fx:id="hour" styleClass="slot-main-data" text="16:00" />
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label fx:id="court" text="Pista 6" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_RIGHT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="TOP_RIGHT" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="duration" text="60 min." />
+                           </children>
+                        </VBox>
+                        <Label fx:id="payment" styleClass="not-paid" text="pending payment" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="iconSection" alignment="CENTER" maxWidth="-Infinity" minWidth="0.0" spacing="5.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="action" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/add-b.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../styles/mainStyle.css" />
+      <URL value="@../styles/timeslotcomponent.css" />
+   </stylesheets>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</HBox>

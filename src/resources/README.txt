@@ -1,0 +1,1 @@
+El club.db no funciona aqui debe de estar a la misma altura que src.

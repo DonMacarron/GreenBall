@@ -1,0 +1,73 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.slot-time-label {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -fx-secondary;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.frame-time-slots {
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary-two;
+}
+
+.combo-box {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-accent;
+    -fx-font-weight: bold;
+    -fx-min-height: 30px;
+}
+
+.date-picker {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: -fx-secondary;
+    -fx-font-weight: bold;
+    -fx-min-height: 30px;
+}
+
+.date-picker .text-field {
+    -fx-border-width: 0 1 0 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 5px 0 0 5px;
+    -fx-background-color: -fx-accent;
+
+
+}
+
+.date-picker .cell{
+    -fx-background-color: -fx-primary-two;
+}
+
+.date-picker .cell:hover, .date-picker .cell:focused, .combo-box .cell:hover {
+    -fx-background-color: -fx-accent;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: -fx-secondary-two;
+    -fx-background-radius: 0 5px 5px 0;
+    -fx-background-insets: 0;
+}
+
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow,
+.date-picker .arrow-button .arrow
+{
+    -fx-background-color: -fx-primary;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: -fx-primary;
+}
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+
+

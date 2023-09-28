@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="537.0" prefWidth="323.0" stylesheets="@styles/mainStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BookingsViewController">
+   <content>
+      <VBox alignment="TOP_CENTER" spacing="15.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Button fx:id="previous" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#previous" styleClass="button-secondary">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/arrow_forward_b.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <HBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Mis reservas" />
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label fx:id="currPage" />
+                              <Label text="/" />
+                              <Label fx:id="totalPage" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <Button fx:id="next" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#next" styleClass="button-secondary">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/arrow_forward_b.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <GridPane fx:id="grid">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

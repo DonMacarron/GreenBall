@@ -1,0 +1,40 @@
+.menu-frame {
+    -fx-background-color: -fx-primary-two;
+    -fx-border-color: -fx-secondary;
+    -fx-border-width: 0 1 0 0;
+}
+
+.menu-burger {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.menu-entrys {
+    -fx-border-color: -fx-secondary;
+    -fx-border-width: 1 0 1 0;
+}
+
+.menu-entry {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+
+    -fx-border-color: -fx-secondary;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.menu-entry:hover, .menu-burger:hover {
+    -fx-background-color: -fx-accent;
+}
+
+.menu-entry:disabled {
+    -fx-background-color: -fx-accent-two;
+    -fx-text-fill: -fx-primary;
+    -fx-opacity: 1.0;
+}
+
+
+
+

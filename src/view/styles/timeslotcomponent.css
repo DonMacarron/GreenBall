@@ -1,0 +1,54 @@
+.time-slot-frame > * {
+    -fx-font-weight: bold;
+
+}
+
+.time-slot-frame {
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-accent-two;
+}
+
+.time-slot-frame:hover {
+    -fx-background-color: -fx-accent;
+    -fx-cursor: hand;
+}
+
+.time-slot-frame:selected {
+    -fx-background-color: -fx-secondary-two;
+    -fx-cursor: hand;
+}
+
+#actionBtn {
+    -fx-padding: 5px;
+    -fx-background-color: transparent;
+}
+
+#duration {
+    -fx-font-style: italic;
+    -fx-font-weight: lighter;
+    -fx-text-fill: #c59400;
+}
+
+#court {
+    -fx-font-size: 11px;
+    -fx-font-style: italic;
+
+}
+
+#payment {
+    -fx-font-size: 9px;
+    -fx-text-fill: -fx-error;
+}
+
+.slot-title {
+    -fx-font-size: 9px;
+}
+
+.slot-main-data {
+    -fx-font-size: 16px;
+    -fx-font-weight: lighter;
+}
+
+#hour {
+    -fx-text-fill: #c59400;
+}

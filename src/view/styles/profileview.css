@@ -1,0 +1,39 @@
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+
+.main-frame {
+    -fx-background-color: -fx-primary;
+}
+
+.separator .line{
+    -fx-background-color: -fx-secondary;
+    -fx-pref-width: 1;
+    -fx-border-color: null;
+}
+
+.button-delete {
+    -fx-background-color: -fx-error;
+    -fx-padding: 0 5px;
+}
+
+.button-delete:hover {
+    -fx-background-color: derive(-fx-error, 20%);
+}
+
+#imgDelete {
+    -fx-border-radius: 10px 0 0 10px;
+    -fx-background-radius: 10px 0 0 10px;
+}
+
+#imgSelect {
+    -fx-border-radius: 0 10px 10px 0;
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.text-field:disabled {
+    -fx-border-color: -fx-secondary;
+    -fx-opacity: 0.5;
+}

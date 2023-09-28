@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProfileViewController">
+   <content>
+      <HBox alignment="CENTER" styleClass="main-frame">
+         <children>
+            <VBox alignment="CENTER" maxWidth="600.0" minHeight="-Infinity" minWidth="400.0" spacing="15.0" HBox.hgrow="NEVER">
+               <children>
+                  <HBox spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" spacing="10.0">
+                           <children>
+                              <ImageView fx:id="imgUser" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/images/profile-b.png" />
+                                 </image>
+                              </ImageView>
+                              <HBox fx:id="imgEdit">
+                                 <children>
+                                    <Button fx:id="imgDelete" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#deleteUserImage">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/images/delete-w.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="button-secondary" />
+                                          <String fx:value="button-delete" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button fx:id="imgSelect" mnemonicParsing="false" onAction="#selectUserImage" styleClass="button-primary" text="Seleccionar imagen" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" />
+                        <VBox maxWidth="230.0" minHeight="-Infinity" spacing="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label styleClass="section-title" text="Inicio de sesión" />
+                              <VBox>
+                                 <children>
+                                    <Label text="Nombre de ususario" />
+                                    <TextField fx:id="user" maxWidth="1.7976931348623157E308" />
+                                    <Label fx:id="errorUser" minHeight="0.0" prefHeight="0.0" styleClass="error-message" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <VBox fx:id="changePassword" minHeight="0.0" prefHeight="0.0">
+                                       <children>
+                                          <Label text="Contraseña" />
+                                          <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#changePassword" styleClass="button-primary" text="Cambiar contraseña" />
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="registerPassword" minHeight="0.0">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label text="Contraseña" />
+                                                <PasswordField fx:id="password" styleClass="text-field" />
+                                                <Label fx:id="errorPassword" minHeight="0.0" prefHeight="0.0" styleClass="error-message" text="Label" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label text="Confirmar contraseña" />
+                                                <PasswordField fx:id="confirmPassword" styleClass="text-field" />
+                                                <Label fx:id="errorConfirmPassword" minHeight="0.0" prefHeight="0.0" styleClass="error-message" text="Label" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox minHeight="-Infinity" spacing="10.0">
+                     <children>
+                        <Label styleClass="section-title" text="Datos personales" />
+                        <GridPane hgap="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="35.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label text="Nombre" />
+                                    <TextField fx:id="name" />
+                                    <Label fx:id="errorName" minHeight="0.0" prefHeight="0.0" styleClass="error-message" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox GridPane.columnIndex="1">
+                                 <children>
+                                    <Label text="Apellidos" />
+                                    <TextField fx:id="surname" />
+                                    <Label fx:id="errorSurname" minHeight="0.0" prefHeight="0.0" styleClass="error-message" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                        <VBox maxWidth="200.0">
+                           <children>
+                              <Label text="Telefono" />
+                              <TextField fx:id="phone" />
+                              <Label fx:id="errorPhone" minHeight="0.0" prefHeight="0.0" styleClass="error-message" wrapText="true" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox minHeight="-Infinity" spacing="10.0">
+                     <children>
+                        <Label styleClass="section-title" text="Datos bancarios (Opcional)" />
+                        <HBox alignment="BOTTOM_LEFT" spacing="10.0">
+                           <children>
+                              <GridPane hgap="10.0" HBox.hgrow="ALWAYS">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="75.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <Label text="Tarjeta de credito" />
+                                          <TextField fx:id="card" />
+                                          <Label fx:id="errorCard" minHeight="0.0" prefHeight="0.0" styleClass="error-message" wrapText="true" />
+                                       </children>
+                                    </VBox>
+                                    <VBox GridPane.columnIndex="1">
+                                       <children>
+                                          <Label text="SVC" />
+                                          <TextField fx:id="svc" minWidth="2.0" prefWidth="2.0" VBox.vgrow="ALWAYS" />
+                                          <Label fx:id="errorSvc" minHeight="0.0" prefHeight="0.0" styleClass="error-message" wrapText="true" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </GridPane>
+                              <VBox>
+                                 <children>
+                                    <Label maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                                    <Button fx:id="cardDelete" contentDisplay="GRAPHIC_ONLY" minWidth="30.0" mnemonicParsing="false" onAction="#deleteCard">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/images/delete-w.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="button-secondary" />
+                                          <String fx:value="button-delete" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox fx:id="controls" alignment="BOTTOM_RIGHT" spacing="10.0">
+                     <children>
+                        <Button fx:id="save" mnemonicParsing="false" onAction="#save" prefWidth="85.0" styleClass="button-primary" text="Guardar" />
+                        <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancel" prefWidth="85.0" styleClass="button-secondary" text="Cancelar" />
+                        <Button fx:id="edit" mnemonicParsing="false" prefWidth="85.0" styleClass="button-primary" text="Editar" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </HBox>
+   </content>
+   <stylesheets>
+      <URL value="@styles/mainStyle.css" />
+      <URL value="@styles/profileview.css" />
+   </stylesheets>
+</ScrollPane>

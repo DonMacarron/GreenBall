@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="327.0" stylesheets="@../estilos/EstiloPrincipal.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <DatePicker prefHeight="44.0" prefWidth="202.0" promptText="Seleccione un día -&gt;" />
+         </children>
+      </VBox>
+      <VBox prefHeight="578.0" prefWidth="327.0" />
+   </children>
+</VBox>

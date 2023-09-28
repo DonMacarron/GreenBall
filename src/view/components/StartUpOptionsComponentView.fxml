@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15.0" styleClass="start-frame" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.components.StartUpOptionsComponentViewController">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resources/images/greenball-logo.png" />
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" spacing="5.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox spacing="20.0">
+                    <children>
+                        <VBox>
+                            <children>
+                                <VBox spacing="10.0">
+                                    <children>
+                                        <VBox>
+                                            <children>
+                                                <Label text="Usuario" />
+                                                <TextField fx:id="user" onKeyTyped="#fieldUpdated" promptText="Usuario" />
+                                                <Label fx:id="errorUser" minHeight="0.0" prefHeight="0.0" styleClass="error-message" />
+                                            </children>
+                                        </VBox>
+                                        <VBox>
+                                            <children>
+                                                <Label text="Contraseña" />
+                                                <PasswordField fx:id="password" onAction="#logIn" onKeyTyped="#fieldUpdated" promptText="Contraseña" />
+                                                <Label fx:id="errorPassword" minHeight="0.0" prefHeight="0.0" styleClass="error-message" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#logIn" styleClass="button-primary" text="Iniciar sesión" />
+                    </children>
+                </VBox>
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#register" styleClass="button-secondary" text="Crear cuenta nueva" VBox.vgrow="ALWAYS" />
+            </children>
+        </VBox>
+    </children>
+    <stylesheets>
+        <URL value="@../styles/startupoptionscomponentview.css" />
+        <URL value="@../styles/mainStyle.css" />
+    </stylesheets>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+</VBox>

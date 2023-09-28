@@ -1,0 +1,112 @@
+* {
+    -fx-text-fill: -fx-secondary;
+}
+
+.root {
+    /* Basic colors */
+    -fx-white: #FFFFFF;
+    -fx-black: #000000;
+    
+    
+    /* Colors for rule 60 30 10 */
+    /*-fx-base: -fx-white;
+    -fx-primary: #eefcfa;
+    -fx-secondary: #1a9b8b;
+    -fx-accent: #0b403a;
+    -fx-error: #e7514e;*/
+
+    /*-fx-base: #c7f9cc;
+    -fx-primary: #80ed99;
+    -fx-secondary: #57cc99;
+    -fx-accent: #38a3a5;
+    -fx-accent-dark: #22577a;
+    -fx-error: #e7514e;*/
+    
+    /*-fx-base: #f7ede2;
+    -fx-primary: #f5cac3;
+    -fx-secondary: #84a59d;
+    -fx-accent: #f6bd60;
+    -fx-accent-dark: -fx-accent;
+    -fx-error: #f28482;*/
+    
+    /*-fx-base: #F1FAEE;
+    -fx-primary: #A8DADC;
+    -fx-secondary: #457B9D;
+    -fx-accent: #1D3557;
+    -fx-accent-dark: -fx-accent;
+    -fx-error: #E63946;*/
+    
+    -fx-primary: #f9fbfa; /*Background*/
+    -fx-primary-two: #ecfcf9;
+    -fx-secondary: #0b403a; /*Text*/
+    -fx-secondary-two: #189d8d;
+    -fx-accent: #b0e9e4;
+    -fx-accent-two: #9ed2cd;
+    -fx-error: #E63946;
+    
+    
+    /* Text defaul */
+    -fx-font-size: 12px;
+    /*-fx-font-family: 'Inter';
+    
+    /* como bg-color pero accepta gradientes e imgs */
+    -fx-background: -fx-primary;
+}
+
+.label {
+    -fx-text-fill: -fx-secondary;
+    -fx-font-size: 14px;
+}
+
+
+.button-primary {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.button-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-secondary;
+}
+
+.button-secondary, .button-primary {
+    -fx-font-weight: bold;
+    -fx-border-color: -fx-secondary;
+    -fx-border-width: 2px;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+    -fx-pref-height: 30px;
+    -fx-background-insets: 0.5px;
+}
+
+.button-secondary:hover, .button-primary:hover {
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: -fx-secondary;
+}
+
+.error-message {
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-error;
+    -fx-font-size: 9px;
+    -fx-padding: 3px 0 0 0;
+}
+
+.text-field {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-primary;
+    -fx-pref-height: 30px;
+}
+
+.error-field {
+    -fx-border-color: -fx-error;
+    -fx-background-color: derive(-fx-error, 60%);
+    -fx-prompt-text-fill: -fx-error;
+}
+
+.error-field:focused {
+    -fx-background-color: -fx-primary;
+}
+
